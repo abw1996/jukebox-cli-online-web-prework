@@ -46,5 +46,6 @@ end
 def run(arg)
   help 
   puts "Please enter a command:"
-  
+  input = gets.chomp 
+  unless input == 
 end 

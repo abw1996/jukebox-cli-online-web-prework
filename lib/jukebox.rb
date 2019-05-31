@@ -45,8 +45,20 @@ end
 
 def run(arg)
   help 
-  loop
   puts "Please enter a command:"
   input = gets.chomp 
-  unless input == 
+  unless input == "exit"
+    if input == "play"
+      play(songs)
+    elsif input == "help"
+      help
+    elsif input == "list"
+      list(songs) 
+    else puts "Invalid input, please try again"
+    end 
+  end 
+  if input == "exit"
+    exit_jukebox
+  end 
+end
 end 

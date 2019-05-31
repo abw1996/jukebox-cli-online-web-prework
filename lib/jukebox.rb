@@ -44,5 +44,7 @@ def exit_jukebox
 end 
 
 def run(arg)
+  help 
+  puts "Please enter a command:"
   
 end 
